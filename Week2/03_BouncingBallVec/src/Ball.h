@@ -18,5 +18,6 @@ class Ball {
     void draw();
 
     ofPoint position;
-    ofVec2f velocity;
+    ofVec3f velocity;
+    ofMesh mesh;
 };

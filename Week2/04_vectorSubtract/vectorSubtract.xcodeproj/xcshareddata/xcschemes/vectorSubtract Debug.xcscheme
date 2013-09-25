@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "vectorSubtract.app"
+               BuildableName = "vectorSubtractDebug.app"
                BlueprintName = "vectorSubtract"
                ReferencedContainer = "container:vectorSubtract.xcodeproj">
             </BuildableReference>
@@ -33,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "vectorSubtract.app"
+            BuildableName = "vectorSubtractDebug.app"
             BlueprintName = "vectorSubtract"
             ReferencedContainer = "container:vectorSubtract.xcodeproj">
          </BuildableReference>
@@ -42,17 +41,16 @@
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      displayScaleIsEnabled = "NO"
+      displayScale = "1.00"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
-      ignoresPersistentStateOnLaunch = "NO"
-      debugDocumentVersioning = "YES"
-      allowLocationSimulation = "YES">
+      buildConfiguration = "Debug">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "vectorSubtract.app"
+            BuildableName = "vectorSubtractDebug.app"
             BlueprintName = "vectorSubtract"
             ReferencedContainer = "container:vectorSubtract.xcodeproj">
          </BuildableReference>
@@ -61,16 +59,17 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      displayScaleIsEnabled = "NO"
+      displayScale = "1.00"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
-      debugDocumentVersioning = "YES">
+      buildConfiguration = "Debug">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "vectorSubtract.app"
+            BuildableName = "vectorSubtractDebug.app"
             BlueprintName = "vectorSubtract"
             ReferencedContainer = "container:vectorSubtract.xcodeproj">
          </BuildableReference>

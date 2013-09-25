@@ -21,9 +21,9 @@ class testApp : public ofBaseApp{
 	
 		vector < ofPoint > points;
 		
+        ofSoundPlayer mySound;
 	
-	
-
+        ofVec3f rotation;
 };
 
 #endif

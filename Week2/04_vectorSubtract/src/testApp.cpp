@@ -14,6 +14,10 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    // Why not do this? What's the benefit of vector subtraction?
+    //    ofLine( ofPoint(mouseX,mouseY), ofPoint(ofGetWindowWidth()/2, ofGetWindowHeight()/2) );
+
 
     ofPushMatrix();{
     
