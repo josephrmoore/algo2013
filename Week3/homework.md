@@ -1,7 +1,6 @@
 Homework for 11/17 - Algo
 
-1. Make a composition using animation techniques that is inspired by John Whitney. Think of how he used timing repitition and creating big moments in his works.
-
+1. Make a composition using animation techniques that is inspired by John Whitney. Think of how he used timing repetition and creating big moments in his works.
 
 - multiple ghost images converging and diverging
 - spinning flashing doilies
@@ -13,10 +12,9 @@ Homework for 11/17 - Algo
 
 
 
-2. Since we talked a little bit about sound, make a compositon based on a piece of music. It doesn't have to be long, but there should be something dynamic to it.  You don't have to have the sound included in the application, but your code should be the visual equivalent to the music.  Think about what the artist was trying to say with the music, and try to bring that out in your visuals. 
+2. Since we talked a little bit about sound, make a composition based on a piece of music. It doesn't have to be long, but there should be something dynamic to it.  You don't have to have the sound included in the application, but your code should be the visual equivalent to the music.  Think about what the artist was trying to say with the music, and try to bring that out in your visuals.
 
 CHORE
-
 
 3. Use sin / cos to emulate a natural phenomenon.  Post a picture or video of what your phenomenon is along with you application.
 
