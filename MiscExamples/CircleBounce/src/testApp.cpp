@@ -2,41 +2,42 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    myField.setup( ofGetWindowWidth(), ofGetWindowHeight(), 20 );
-        
+    ofSetVerticalSync(true);
+    ofSetFrameRate(60);
     ofBackground(0);
+    ofSetCircleResolution(100);
+    ofEnableSmoothing();
     
-    particleList.clear();
+    circleCenter = ofGetWindowSize() / 2;
+    circleRadius = 200;
     
-    for( int i=0; i<300; i++ ){
-        addParticle();
-    }
+    addParticle();
 }
 
 void testApp::addParticle() {
-    Particle part;
-    part.pos = ofVec2f( ofRandomWidth(), ofRandomHeight() );
+    Particle p;
+    p.pos = ofVec2f( circleCenter - ofVec2f(-50,20) );
+    p.vel = ofVec2f( ofRandom(-5,5), ofRandom(-5,5) );
     
-    particleList.push_back( part );
+    particleList.push_back( p );
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-    
     for( int i=0; i<particleList.size(); i++ ){
-        particleList[i].applyForce( myField.getForceAtPosition(particleList[i].pos) * 0.005);
-        particleList[i].update();
+        particleList[i].update( circleCenter, circleRadius );
     }
-    
-    myField.update();
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    ofSetColor(255);
-    myField.draw();
     
-    ofSetColor(0, 255, 255);
+    // draw the outer circle
+    ofNoFill();
+    ofCircle( circleCenter, 200 );
+    
+    // draw the particles
+    ofFill();
     for( int i=0; i<particleList.size(); i++ ){
         particleList[i].draw();
     }
@@ -44,11 +45,7 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-    if( key == '1'){
-        myField.setRandom( 20.0 );
-    }else if( key == '2' ){
-        myField.setPerlin();
-    }
+
 }
 
 //--------------------------------------------------------------
@@ -63,19 +60,12 @@ void testApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-    
-    
-    if( button == OF_MOUSE_BUTTON_1 ){
-//        myField.addRepelForce(x, y, 100, 2.0);
-        myField.addCircularForce(x, y, 300, 2.0);
-    }else{
-        myField.addAttractForce(x, y, 100, 2.0);
-    }
+
 }
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-    mouseDragged(x, y, button);
+    addParticle();
 }
 
 //--------------------------------------------------------------
