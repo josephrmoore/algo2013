@@ -24,14 +24,11 @@ void FlowField::setup( int width, int height, int res ) {
         VectorList myList;
         flowList.push_back( myList );
         
-        for( int x=0; x<rows; x++){
+        for( int x=0; x<cols; x++){
             ofVec2f dir(0,0);
             flowList[y].push_back( dir );
         }
     }
-    
-    ofImage mImg;
-    mImg.setColor(<#int x#>, <#int y#>, <#const ofColor_<unsigned char> &color#>)
 }
 
 void FlowField::setRandom( const float &strength ) {
